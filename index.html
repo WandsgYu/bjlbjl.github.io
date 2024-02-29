@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web版百家乐</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 600px; margin: auto; padding: 20px; }
+        .balance { margin-bottom: 20px; }
+        .game, .betting-history { margin-top: 20px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="balance">
+            <label for="balanceInput">请输入您的初始余额:</label>
+            <input type="number" id="balanceInput" value="1000">
+            <button id="setBalance">设置余额</button>
+        </div>
+        <div class="game">
+            <p>您的余额: <span id="currentBalance">1000</span> 元</p>
+            <label for="betAmount">下注金额:</label>
+            <input type="number" id="betAmount" value="100">
+            <button onclick="placeBet('banker')">下注庄家</button>
+            <button onclick="placeBet('player')">下注闲家</button>
+            <p>游戏结果: <span id="gameResult">请开始游戏</span></p>
+        </div>
+        <div class="betting-history">
+            <h3>下注历史</h3>
+            <ul id="betHistory"></ul>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
