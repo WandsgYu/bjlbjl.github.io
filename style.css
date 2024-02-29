@@ -1,0 +1,20 @@
+body, html {
+       font-family: Arial, sans-serif;
+       text-align: center;
+       padding: 20px;
+   }
+   
+   #game {
+       max-width: 600px;
+       margin: auto;
+       padding: 20px;
+       border: 1px solid #ddd;
+       border-radius: 5px;
+   }
+   
+   #gameOutput {
+       margin: 20px 0;
+       font-size: 24px;
+       font-weight: bold;
+   }
+   
