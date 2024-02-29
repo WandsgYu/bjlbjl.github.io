@@ -9,6 +9,34 @@
         .game, .betting-history { margin-top: 20px; }
         ul { list-style-type: none; padding: 0; }
         li { margin-bottom: 10px; }
+        /* 基本样式 */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 小屏幕（手机）样式 */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="number"], button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .game button, .balance button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    label {
+        display: block; /* 让标签在输入框上方 */
+    }
+}
+
     </style>
 </head>
 <body>
